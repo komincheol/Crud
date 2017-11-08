@@ -1,0 +1,12 @@
+<h1>수정하기</h1>
+<h1><%=@post.id%>번째 글</h1>
+
+<form action="/post/updated/<%=@post.id%>">
+    제목 : <input type ="text" name="title" value="<%= @post.title %>"><br>
+    내용 : <input type ="text" name="content" value="<%= @post.content %>"><br>
+    <input type="submit"><br>
+</form>
+
+
+
+<a href="/">홈으로</a>
